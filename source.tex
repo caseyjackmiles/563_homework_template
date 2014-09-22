@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lastpage}
+\usepackage{hyperref}
+% \usepackage{lastpage} % provides lastpage command
+\usepackage{enumerate} % allows for a., b., ... etc.
+
+% SIUNITX Package
+\usepackage[binary-units=true]{siunitx} % allows for quick unit methods
+\sisetup{per-mode=symbol}
+
+% Use Palatino, instead of Computer Modern
+\usepackage{mathpazo}
+\linespread{1.05}
+
+\widowpenalty=500
+
+\usepackage[margin=0.75in]{geometry}
+
+% Better ceiling function
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+%------------------------
+% Fancy headers
+%------------------------
+\usepackage{fancyhdr}
+
+% Redefine plain headers, so they
+% can be used on "plain" pages (i.e., all pages)
+\fancypagestyle{plain}{
+  \fancyhf{} % Clear header/footer
+  \fancyhead[L]{Casey Miles 2111744}
+  \fancyhead[C]{\center{EECS 563 HW 3}}
+  \fancyhead[R]{Page \thepage\ / \pageref{LastPage}}
+}
+\pagestyle{plain}% Set page style to plain.
+
+%-----------------------
+
