@@ -1,11 +1,13 @@
-EECS 563 Homework
-=================
+EECS 563 Homework Template
+==========================
 
-Homework 2: Due 4 Sep 2014
---------------------------
+Creating an assignment repo:
+----------------------------
 
-Instructions
-------------
+Use this script: [start\_563\_homework.sh](https://gist.github.com/caseyjackmiles/709a74f7a367de5daa3d)
+
+After creating assignment repo:
+--------------------------------------------
 
 1. `cd` into the root directory.
 2. Run `npm install` to install Node packages
