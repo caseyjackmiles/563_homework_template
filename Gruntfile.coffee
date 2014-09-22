@@ -5,7 +5,6 @@ module.exports = ->
     @initConfig
         latex:
             src: ['source.tex']
-            outputDirectory: 'output'
         watch:
             files: ['*.tex']
             tasks: ['latex', 'latex']
@@ -15,4 +14,4 @@ module.exports = ->
     @loadNpmTasks 'grunt-contrib-watch'
 
     # Tell grunt what to do if no arguments are specified
-    @registerTask 'default', ['latex', 'watch']
+    @registerTask 'default', ['latex', 'latex', 'watch']
